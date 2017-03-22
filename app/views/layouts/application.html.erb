@@ -33,20 +33,24 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li>
-          <%= link_to "Pag1",  pags_pag1_path %>
+          <%= link_to "Pag1", pags_pag1_path %>
         <li>
           <a href="<%= pags_pag2_url %>">Pag2</a>
         </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+        <li>
+          <%= link_to "Pag3", pags_pag3_path %>
+        </li>
 
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+<div class="container">
+  <%= yield %>
+</div>
 
-    <%= yield %>
   </body>
 </html>
